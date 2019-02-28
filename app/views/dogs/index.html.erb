@@ -1,3 +1,4 @@
+
 <ul>
   <% @dogs.each do |dog| %>
     <li><%= link_to dog.name, dog_path(dog) %>  <%= dog.employees.length %></li>

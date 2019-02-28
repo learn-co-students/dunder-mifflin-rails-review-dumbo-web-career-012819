@@ -1,4 +1,17 @@
-<div style="height: 100vh, background-image: url(<%= @employee.img_url %>)">
+
+<style media="screen">
+	body {
+		background: url(<%= @employee.img_url %>);
+	}
+</style>
+
+	
+	
+</style>
+
+<div class="show-background">
+
+
 <h1><%= @employee.full_name %></h1>
 
 <ul>
@@ -8,6 +21,9 @@
   <li>Dog: <%= link_to @employee.dog.name, dog_path(@employee.dog) %></li>
 
 </ul>
+
+
+</body>
 
 
 </div>
