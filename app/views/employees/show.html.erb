@@ -1,0 +1,13 @@
+<div style="height: 100vh, background-image: url(<%= @employee.img_url %>)">
+<h1><%= @employee.full_name %></h1>
+
+<ul>
+  <li>Alias: <%= @employee.alias %></li>
+  <li>Title: <%= @employee.title %></li>
+  <li>Office: <%= @employee.office %></li>
+  <li>Dog: <%= link_to @employee.dog.name, dog_path(@employee.dog) %></li>
+
+</ul>
+
+
+</div>
