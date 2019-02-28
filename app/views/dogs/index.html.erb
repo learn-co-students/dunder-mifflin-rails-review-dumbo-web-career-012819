@@ -1,0 +1,7 @@
+<ul>
+  <% @dogs.each do |dog| %>
+    <li><%= link_to dog.name, dog_path(dog) %>  <%= dog.employees.length %></li>
+  <% end %>
+</ul>
+
+<%# <%= button_to "Sort Dogs By Employee", dogs_path, Dog.sort_dog %> %>
