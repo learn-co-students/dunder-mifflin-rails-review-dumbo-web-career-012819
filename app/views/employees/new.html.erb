@@ -1,0 +1,13 @@
+<h1>New Employee</h1>
+<% if @employee.errors.any? %>
+    <h1>Errors</h1>
+    <ul>
+        <% @employee.errors.full_messages.each do |msg| %>
+    <li>
+            <%= msg %>
+    </li>
+        <%end %>
+    </ul>
+<%end%>
+
+<%= render "form" %>
