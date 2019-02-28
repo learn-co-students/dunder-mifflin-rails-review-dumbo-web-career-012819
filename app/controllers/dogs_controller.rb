@@ -2,14 +2,11 @@ class DogsController < ApplicationController
 
 
   def index
-    if params[:sorted] == "true"
-      # Dog.sort_dog
-      byebug
-      # Dog.all.sort_by do |dog|
-      #   dog.employees.length
-      # end
-    end
     @dogs = Dog.all
+
+    if params[:sorted] == "true"
+      @dogs = Dog.sort_dog
+    end
   end
 
   def show
